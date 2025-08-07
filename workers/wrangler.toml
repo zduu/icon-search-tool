@@ -1,0 +1,23 @@
+name = "icon-search-api"
+main = "src/index.ts"
+compatibility_date = "2024-08-07"
+
+[env.production]
+name = "icon-search-api"
+
+[env.staging]
+name = "icon-search-api-staging"
+
+# KV 命名空间绑定
+[[kv_namespaces]]
+binding = "ICON_CACHE"
+id = "your-kv-namespace-id"
+preview_id = "your-preview-kv-namespace-id"
+
+# 环境变量
+[vars]
+ENVIRONMENT = "development"
+
+# 速率限制
+[limits]
+cpu_ms = 50
