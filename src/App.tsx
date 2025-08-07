@@ -98,6 +98,40 @@ const popularIcons = [
   { name: 'lucide:car', category: 'transport', collection: 'lucide', tags: ['vehicle', 'auto', 'drive'] },
   { name: 'lucide:plane', category: 'transport', collection: 'lucide', tags: ['airplane', 'flight', 'travel'] },
   { name: 'lucide:train', category: 'transport', collection: 'lucide', tags: ['railway', 'metro', 'subway'] },
+  { name: 'lucide:sun', category: 'weather', collection: 'lucide', tags: ['sunny', 'bright', 'day'] },
+  { name: 'lucide:moon', category: 'weather', collection: 'lucide', tags: ['night', 'dark', 'sleep'] },
+  { name: 'lucide:cloud', category: 'weather', collection: 'lucide', tags: ['sky', 'overcast', 'storage'] },
+  { name: 'lucide:umbrella', category: 'weather', collection: 'lucide', tags: ['rain', 'protection', 'cover'] },
+  { name: 'lucide:zap', category: 'general', collection: 'lucide', tags: ['lightning', 'power', 'energy'] },
+  { name: 'lucide:shield', category: 'security', collection: 'lucide', tags: ['protection', 'secure', 'safety'] },
+  { name: 'lucide:key', category: 'security', collection: 'lucide', tags: ['password', 'access', 'unlock'] },
+  { name: 'lucide:users', category: 'people', collection: 'lucide', tags: ['group', 'team', 'multiple'] },
+  { name: 'lucide:user-plus', category: 'people', collection: 'lucide', tags: ['add-user', 'invite', 'new'] },
+  { name: 'lucide:user-minus', category: 'people', collection: 'lucide', tags: ['remove-user', 'delete', 'kick'] },
+  { name: 'lucide:shopping-cart', category: 'shopping', collection: 'lucide', tags: ['cart', 'buy', 'purchase'] },
+  { name: 'lucide:credit-card', category: 'finance', collection: 'lucide', tags: ['payment', 'money', 'card'] },
+  { name: 'lucide:dollar-sign', category: 'finance', collection: 'lucide', tags: ['money', 'price', 'cost'] },
+  { name: 'lucide:trending-up', category: 'arrows', collection: 'lucide', tags: ['growth', 'increase', 'chart'] },
+  { name: 'lucide:trending-down', category: 'arrows', collection: 'lucide', tags: ['decline', 'decrease', 'chart'] },
+  { name: 'lucide:bar-chart', category: 'general', collection: 'lucide', tags: ['chart', 'graph', 'data'] },
+  { name: 'lucide:pie-chart', category: 'general', collection: 'lucide', tags: ['chart', 'graph', 'statistics'] },
+  { name: 'lucide:activity', category: 'general', collection: 'lucide', tags: ['pulse', 'heartbeat', 'monitor'] },
+  { name: 'lucide:cpu', category: 'devices', collection: 'lucide', tags: ['processor', 'chip', 'computer'] },
+  { name: 'lucide:hard-drive', category: 'devices', collection: 'lucide', tags: ['storage', 'disk', 'data'] },
+  { name: 'lucide:monitor', category: 'devices', collection: 'lucide', tags: ['screen', 'display', 'computer'] },
+  { name: 'lucide:smartphone', category: 'devices', collection: 'lucide', tags: ['mobile', 'phone', 'device'] },
+  { name: 'lucide:tablet', category: 'devices', collection: 'lucide', tags: ['ipad', 'device', 'mobile'] },
+  { name: 'lucide:laptop', category: 'devices', collection: 'lucide', tags: ['computer', 'notebook', 'pc'] },
+  { name: 'lucide:headphones', category: 'media', collection: 'lucide', tags: ['audio', 'sound', 'music'] },
+  { name: 'lucide:mic', category: 'media', collection: 'lucide', tags: ['microphone', 'record', 'voice'] },
+  { name: 'lucide:volume-2', category: 'media', collection: 'lucide', tags: ['sound', 'audio', 'speaker'] },
+  { name: 'lucide:volume-x', category: 'media', collection: 'lucide', tags: ['mute', 'silent', 'no-sound'] },
+  { name: 'lucide:play', category: 'media', collection: 'lucide', tags: ['start', 'begin', 'video'] },
+  { name: 'lucide:pause', category: 'media', collection: 'lucide', tags: ['stop', 'break', 'video'] },
+  { name: 'lucide:skip-forward', category: 'media', collection: 'lucide', tags: ['next', 'forward', 'video'] },
+  { name: 'lucide:skip-back', category: 'media', collection: 'lucide', tags: ['previous', 'back', 'video'] },
+  { name: 'lucide:repeat', category: 'media', collection: 'lucide', tags: ['loop', 'cycle', 'again'] },
+  { name: 'lucide:shuffle', category: 'media', collection: 'lucide', tags: ['random', 'mix', 'playlist'] },
 
   // Heroicons 图标 (40+ 图标)
   { name: 'heroicons:home', category: 'general', collection: 'heroicons', tags: ['house', 'main', 'start'] },
@@ -144,6 +178,30 @@ const popularIcons = [
   { name: 'heroicons:battery-100', category: 'devices', collection: 'heroicons', tags: ['power', 'charge', 'energy'] },
   { name: 'heroicons:globe-alt', category: 'general', collection: 'heroicons', tags: ['world', 'earth', 'international'] },
   { name: 'heroicons:map-pin', category: 'maps', collection: 'heroicons', tags: ['location', 'place', 'marker'] },
+  { name: 'heroicons:sun', category: 'weather', collection: 'heroicons', tags: ['sunny', 'bright', 'day'] },
+  { name: 'heroicons:moon', category: 'weather', collection: 'heroicons', tags: ['night', 'dark', 'sleep'] },
+  { name: 'heroicons:cloud', category: 'weather', collection: 'heroicons', tags: ['sky', 'overcast', 'weather'] },
+  { name: 'heroicons:bolt', category: 'general', collection: 'heroicons', tags: ['lightning', 'power', 'energy'] },
+  { name: 'heroicons:shield-check', category: 'security', collection: 'heroicons', tags: ['protection', 'secure', 'verified'] },
+  { name: 'heroicons:key', category: 'security', collection: 'heroicons', tags: ['password', 'access', 'unlock'] },
+  { name: 'heroicons:users', category: 'people', collection: 'heroicons', tags: ['group', 'team', 'multiple'] },
+  { name: 'heroicons:user-plus', category: 'people', collection: 'heroicons', tags: ['add-user', 'invite', 'new'] },
+  { name: 'heroicons:user-minus', category: 'people', collection: 'heroicons', tags: ['remove-user', 'delete', 'kick'] },
+  { name: 'heroicons:shopping-cart', category: 'shopping', collection: 'heroicons', tags: ['cart', 'buy', 'purchase'] },
+  { name: 'heroicons:credit-card', category: 'finance', collection: 'heroicons', tags: ['payment', 'money', 'card'] },
+  { name: 'heroicons:currency-dollar', category: 'finance', collection: 'heroicons', tags: ['money', 'price', 'cost'] },
+  { name: 'heroicons:chart-bar', category: 'general', collection: 'heroicons', tags: ['chart', 'graph', 'data'] },
+  { name: 'heroicons:presentation-chart-line', category: 'general', collection: 'heroicons', tags: ['chart', 'graph', 'statistics'] },
+  { name: 'heroicons:cpu-chip', category: 'devices', collection: 'heroicons', tags: ['processor', 'chip', 'computer'] },
+  { name: 'heroicons:computer-desktop', category: 'devices', collection: 'heroicons', tags: ['monitor', 'screen', 'pc'] },
+  { name: 'heroicons:device-phone-mobile', category: 'devices', collection: 'heroicons', tags: ['smartphone', 'mobile', 'phone'] },
+  { name: 'heroicons:device-tablet', category: 'devices', collection: 'heroicons', tags: ['tablet', 'ipad', 'device'] },
+  { name: 'heroicons:play', category: 'media', collection: 'heroicons', tags: ['start', 'begin', 'video'] },
+  { name: 'heroicons:pause', category: 'media', collection: 'heroicons', tags: ['stop', 'break', 'video'] },
+  { name: 'heroicons:forward', category: 'media', collection: 'heroicons', tags: ['next', 'skip', 'video'] },
+  { name: 'heroicons:backward', category: 'media', collection: 'heroicons', tags: ['previous', 'back', 'video'] },
+  { name: 'heroicons:speaker-wave', category: 'media', collection: 'heroicons', tags: ['volume', 'sound', 'audio'] },
+  { name: 'heroicons:speaker-x-mark', category: 'media', collection: 'heroicons', tags: ['mute', 'silent', 'no-sound'] },
 
   // Feather 图标 (40+ 图标)
   { name: 'feather:home', category: 'general', collection: 'feather', tags: ['house', 'main', 'start'] },
@@ -190,6 +248,39 @@ const popularIcons = [
   { name: 'feather:battery', category: 'devices', collection: 'feather', tags: ['power', 'charge', 'energy'] },
   { name: 'feather:globe', category: 'general', collection: 'feather', tags: ['world', 'earth', 'international'] },
   { name: 'feather:map-pin', category: 'maps', collection: 'feather', tags: ['location', 'place', 'marker'] },
+  { name: 'feather:sun', category: 'weather', collection: 'feather', tags: ['sunny', 'bright', 'day'] },
+  { name: 'feather:moon', category: 'weather', collection: 'feather', tags: ['night', 'dark', 'sleep'] },
+  { name: 'feather:cloud', category: 'weather', collection: 'feather', tags: ['sky', 'overcast', 'weather'] },
+  { name: 'feather:cloud-rain', category: 'weather', collection: 'feather', tags: ['rain', 'weather', 'storm'] },
+  { name: 'feather:zap', category: 'general', collection: 'feather', tags: ['lightning', 'power', 'energy'] },
+  { name: 'feather:shield', category: 'security', collection: 'feather', tags: ['protection', 'secure', 'safety'] },
+  { name: 'feather:users', category: 'people', collection: 'feather', tags: ['group', 'team', 'multiple'] },
+  { name: 'feather:user-plus', category: 'people', collection: 'feather', tags: ['add-user', 'invite', 'new'] },
+  { name: 'feather:user-minus', category: 'people', collection: 'feather', tags: ['remove-user', 'delete', 'kick'] },
+  { name: 'feather:shopping-cart', category: 'shopping', collection: 'feather', tags: ['cart', 'buy', 'purchase'] },
+  { name: 'feather:credit-card', category: 'finance', collection: 'feather', tags: ['payment', 'money', 'card'] },
+  { name: 'feather:dollar-sign', category: 'finance', collection: 'feather', tags: ['money', 'price', 'cost'] },
+  { name: 'feather:trending-up', category: 'arrows', collection: 'feather', tags: ['growth', 'increase', 'chart'] },
+  { name: 'feather:trending-down', category: 'arrows', collection: 'feather', tags: ['decline', 'decrease', 'chart'] },
+  { name: 'feather:bar-chart-2', category: 'general', collection: 'feather', tags: ['chart', 'graph', 'data'] },
+  { name: 'feather:pie-chart', category: 'general', collection: 'feather', tags: ['chart', 'graph', 'statistics'] },
+  { name: 'feather:activity', category: 'general', collection: 'feather', tags: ['pulse', 'heartbeat', 'monitor'] },
+  { name: 'feather:cpu', category: 'devices', collection: 'feather', tags: ['processor', 'chip', 'computer'] },
+  { name: 'feather:hard-drive', category: 'devices', collection: 'feather', tags: ['storage', 'disk', 'data'] },
+  { name: 'feather:monitor', category: 'devices', collection: 'feather', tags: ['screen', 'display', 'computer'] },
+  { name: 'feather:smartphone', category: 'devices', collection: 'feather', tags: ['mobile', 'phone', 'device'] },
+  { name: 'feather:tablet', category: 'devices', collection: 'feather', tags: ['ipad', 'device', 'mobile'] },
+  { name: 'feather:laptop', category: 'devices', collection: 'feather', tags: ['computer', 'notebook', 'pc'] },
+  { name: 'feather:headphones', category: 'media', collection: 'feather', tags: ['audio', 'sound', 'music'] },
+  { name: 'feather:mic', category: 'media', collection: 'feather', tags: ['microphone', 'record', 'voice'] },
+  { name: 'feather:volume-2', category: 'media', collection: 'feather', tags: ['sound', 'audio', 'speaker'] },
+  { name: 'feather:volume-x', category: 'media', collection: 'feather', tags: ['mute', 'silent', 'no-sound'] },
+  { name: 'feather:play', category: 'media', collection: 'feather', tags: ['start', 'begin', 'video'] },
+  { name: 'feather:pause', category: 'media', collection: 'feather', tags: ['stop', 'break', 'video'] },
+  { name: 'feather:skip-forward', category: 'media', collection: 'feather', tags: ['next', 'forward', 'video'] },
+  { name: 'feather:skip-back', category: 'media', collection: 'feather', tags: ['previous', 'back', 'video'] },
+  { name: 'feather:repeat', category: 'media', collection: 'feather', tags: ['loop', 'cycle', 'again'] },
+  { name: 'feather:shuffle', category: 'media', collection: 'feather', tags: ['random', 'mix', 'playlist'] },
 
   // Tabler 图标 (40+ 图标)
   { name: 'tabler:home', category: 'general', collection: 'tabler', tags: ['house', 'main', 'start'] },
@@ -237,6 +328,39 @@ const popularIcons = [
   { name: 'tabler:world', category: 'general', collection: 'tabler', tags: ['globe', 'earth', 'international'] },
   { name: 'tabler:map-pin', category: 'maps', collection: 'tabler', tags: ['location', 'place', 'marker'] },
   { name: 'tabler:compass', category: 'maps', collection: 'tabler', tags: ['navigation', 'direction', 'guide'] },
+  { name: 'tabler:sun', category: 'weather', collection: 'tabler', tags: ['sunny', 'bright', 'day'] },
+  { name: 'tabler:moon', category: 'weather', collection: 'tabler', tags: ['night', 'dark', 'sleep'] },
+  { name: 'tabler:cloud', category: 'weather', collection: 'tabler', tags: ['sky', 'overcast', 'weather'] },
+  { name: 'tabler:cloud-rain', category: 'weather', collection: 'tabler', tags: ['rain', 'weather', 'storm'] },
+  { name: 'tabler:bolt', category: 'general', collection: 'tabler', tags: ['lightning', 'power', 'energy'] },
+  { name: 'tabler:shield', category: 'security', collection: 'tabler', tags: ['protection', 'secure', 'safety'] },
+  { name: 'tabler:key', category: 'security', collection: 'tabler', tags: ['password', 'access', 'unlock'] },
+  { name: 'tabler:users', category: 'people', collection: 'tabler', tags: ['group', 'team', 'multiple'] },
+  { name: 'tabler:user-plus', category: 'people', collection: 'tabler', tags: ['add-user', 'invite', 'new'] },
+  { name: 'tabler:user-minus', category: 'people', collection: 'tabler', tags: ['remove-user', 'delete', 'kick'] },
+  { name: 'tabler:shopping-cart', category: 'shopping', collection: 'tabler', tags: ['cart', 'buy', 'purchase'] },
+  { name: 'tabler:credit-card', category: 'finance', collection: 'tabler', tags: ['payment', 'money', 'card'] },
+  { name: 'tabler:currency-dollar', category: 'finance', collection: 'tabler', tags: ['money', 'price', 'cost'] },
+  { name: 'tabler:trending-up', category: 'arrows', collection: 'tabler', tags: ['growth', 'increase', 'chart'] },
+  { name: 'tabler:trending-down', category: 'arrows', collection: 'tabler', tags: ['decline', 'decrease', 'chart'] },
+  { name: 'tabler:chart-bar', category: 'general', collection: 'tabler', tags: ['chart', 'graph', 'data'] },
+  { name: 'tabler:chart-pie', category: 'general', collection: 'tabler', tags: ['chart', 'graph', 'statistics'] },
+  { name: 'tabler:activity', category: 'general', collection: 'tabler', tags: ['pulse', 'heartbeat', 'monitor'] },
+  { name: 'tabler:cpu', category: 'devices', collection: 'tabler', tags: ['processor', 'chip', 'computer'] },
+  { name: 'tabler:device-desktop', category: 'devices', collection: 'tabler', tags: ['monitor', 'screen', 'computer'] },
+  { name: 'tabler:device-mobile', category: 'devices', collection: 'tabler', tags: ['smartphone', 'mobile', 'phone'] },
+  { name: 'tabler:device-tablet', category: 'devices', collection: 'tabler', tags: ['tablet', 'ipad', 'device'] },
+  { name: 'tabler:device-laptop', category: 'devices', collection: 'tabler', tags: ['computer', 'notebook', 'pc'] },
+  { name: 'tabler:headphones', category: 'media', collection: 'tabler', tags: ['audio', 'sound', 'music'] },
+  { name: 'tabler:microphone', category: 'media', collection: 'tabler', tags: ['mic', 'record', 'voice'] },
+  { name: 'tabler:volume', category: 'media', collection: 'tabler', tags: ['sound', 'audio', 'speaker'] },
+  { name: 'tabler:volume-off', category: 'media', collection: 'tabler', tags: ['mute', 'silent', 'no-sound'] },
+  { name: 'tabler:player-play', category: 'media', collection: 'tabler', tags: ['start', 'begin', 'video'] },
+  { name: 'tabler:player-pause', category: 'media', collection: 'tabler', tags: ['stop', 'break', 'video'] },
+  { name: 'tabler:player-skip-forward', category: 'media', collection: 'tabler', tags: ['next', 'forward', 'video'] },
+  { name: 'tabler:player-skip-back', category: 'media', collection: 'tabler', tags: ['previous', 'back', 'video'] },
+  { name: 'tabler:repeat', category: 'media', collection: 'tabler', tags: ['loop', 'cycle', 'again'] },
+  { name: 'tabler:arrows-shuffle', category: 'media', collection: 'tabler', tags: ['random', 'mix', 'playlist'] },
 
   // Material Design 图标 (30+ 图标)
   { name: 'material-symbols:home', category: 'general', collection: 'material', tags: ['house', 'main', 'start'] },
@@ -273,6 +397,37 @@ const popularIcons = [
   { name: 'material-symbols:image', category: 'media', collection: 'material', tags: ['picture', 'photo', 'graphic'] },
   { name: 'material-symbols:videocam', category: 'media', collection: 'material', tags: ['video', 'camera', 'record'] },
   { name: 'material-symbols:music-note', category: 'media', collection: 'material', tags: ['music', 'audio', 'sound'] },
+  { name: 'material-symbols:wb-sunny', category: 'weather', collection: 'material', tags: ['sun', 'sunny', 'bright'] },
+  { name: 'material-symbols:brightness-2', category: 'weather', collection: 'material', tags: ['moon', 'night', 'dark'] },
+  { name: 'material-symbols:cloud', category: 'weather', collection: 'material', tags: ['sky', 'overcast', 'weather'] },
+  { name: 'material-symbols:flash-on', category: 'general', collection: 'material', tags: ['lightning', 'power', 'energy'] },
+  { name: 'material-symbols:security', category: 'security', collection: 'material', tags: ['shield', 'protection', 'secure'] },
+  { name: 'material-symbols:vpn-key', category: 'security', collection: 'material', tags: ['key', 'password', 'access'] },
+  { name: 'material-symbols:group', category: 'people', collection: 'material', tags: ['users', 'team', 'multiple'] },
+  { name: 'material-symbols:person-add', category: 'people', collection: 'material', tags: ['add-user', 'invite', 'new'] },
+  { name: 'material-symbols:person-remove', category: 'people', collection: 'material', tags: ['remove-user', 'delete', 'kick'] },
+  { name: 'material-symbols:shopping-cart', category: 'shopping', collection: 'material', tags: ['cart', 'buy', 'purchase'] },
+  { name: 'material-symbols:payment', category: 'finance', collection: 'material', tags: ['credit-card', 'money', 'card'] },
+  { name: 'material-symbols:attach-money', category: 'finance', collection: 'material', tags: ['dollar', 'price', 'cost'] },
+  { name: 'material-symbols:trending-up', category: 'arrows', collection: 'material', tags: ['growth', 'increase', 'chart'] },
+  { name: 'material-symbols:trending-down', category: 'arrows', collection: 'material', tags: ['decline', 'decrease', 'chart'] },
+  { name: 'material-symbols:analytics', category: 'general', collection: 'material', tags: ['chart', 'graph', 'data'] },
+  { name: 'material-symbols:memory', category: 'devices', collection: 'material', tags: ['cpu', 'processor', 'chip'] },
+  { name: 'material-symbols:storage', category: 'devices', collection: 'material', tags: ['hard-drive', 'disk', 'data'] },
+  { name: 'material-symbols:computer', category: 'devices', collection: 'material', tags: ['monitor', 'screen', 'pc'] },
+  { name: 'material-symbols:smartphone', category: 'devices', collection: 'material', tags: ['mobile', 'phone', 'device'] },
+  { name: 'material-symbols:tablet', category: 'devices', collection: 'material', tags: ['ipad', 'device', 'mobile'] },
+  { name: 'material-symbols:laptop', category: 'devices', collection: 'material', tags: ['computer', 'notebook', 'pc'] },
+  { name: 'material-symbols:headset', category: 'media', collection: 'material', tags: ['headphones', 'audio', 'sound'] },
+  { name: 'material-symbols:mic', category: 'media', collection: 'material', tags: ['microphone', 'record', 'voice'] },
+  { name: 'material-symbols:volume-up', category: 'media', collection: 'material', tags: ['sound', 'audio', 'speaker'] },
+  { name: 'material-symbols:volume-off', category: 'media', collection: 'material', tags: ['mute', 'silent', 'no-sound'] },
+  { name: 'material-symbols:play-arrow', category: 'media', collection: 'material', tags: ['play', 'start', 'video'] },
+  { name: 'material-symbols:pause', category: 'media', collection: 'material', tags: ['stop', 'break', 'video'] },
+  { name: 'material-symbols:skip-next', category: 'media', collection: 'material', tags: ['next', 'forward', 'video'] },
+  { name: 'material-symbols:skip-previous', category: 'media', collection: 'material', tags: ['previous', 'back', 'video'] },
+  { name: 'material-symbols:repeat', category: 'media', collection: 'material', tags: ['loop', 'cycle', 'again'] },
+  { name: 'material-symbols:shuffle', category: 'media', collection: 'material', tags: ['random', 'mix', 'playlist'] },
 
   // Phosphor 图标 (30+ 图标)
   { name: 'ph:house', category: 'general', collection: 'phosphor', tags: ['home', 'main', 'start'] },
@@ -314,7 +469,41 @@ const popularIcons = [
   { name: 'ph:bluetooth', category: 'devices', collection: 'phosphor', tags: ['wireless', 'connection', 'pair'] },
   { name: 'ph:battery-full', category: 'devices', collection: 'phosphor', tags: ['power', 'charge', 'energy'] },
   { name: 'ph:globe', category: 'general', collection: 'phosphor', tags: ['world', 'earth', 'international'] },
-  { name: 'ph:map-pin', category: 'maps', collection: 'phosphor', tags: ['location', 'place', 'marker'] }
+  { name: 'ph:map-pin', category: 'maps', collection: 'phosphor', tags: ['location', 'place', 'marker'] },
+  { name: 'ph:sun', category: 'weather', collection: 'phosphor', tags: ['sunny', 'bright', 'day'] },
+  { name: 'ph:moon', category: 'weather', collection: 'phosphor', tags: ['night', 'dark', 'sleep'] },
+  { name: 'ph:cloud', category: 'weather', collection: 'phosphor', tags: ['sky', 'overcast', 'weather'] },
+  { name: 'ph:cloud-rain', category: 'weather', collection: 'phosphor', tags: ['rain', 'weather', 'storm'] },
+  { name: 'ph:lightning', category: 'general', collection: 'phosphor', tags: ['bolt', 'power', 'energy'] },
+  { name: 'ph:shield', category: 'security', collection: 'phosphor', tags: ['protection', 'secure', 'safety'] },
+  { name: 'ph:key', category: 'security', collection: 'phosphor', tags: ['password', 'access', 'unlock'] },
+  { name: 'ph:users', category: 'people', collection: 'phosphor', tags: ['group', 'team', 'multiple'] },
+  { name: 'ph:user-plus', category: 'people', collection: 'phosphor', tags: ['add-user', 'invite', 'new'] },
+  { name: 'ph:user-minus', category: 'people', collection: 'phosphor', tags: ['remove-user', 'delete', 'kick'] },
+  { name: 'ph:shopping-cart', category: 'shopping', collection: 'phosphor', tags: ['cart', 'buy', 'purchase'] },
+  { name: 'ph:credit-card', category: 'finance', collection: 'phosphor', tags: ['payment', 'money', 'card'] },
+  { name: 'ph:currency-dollar', category: 'finance', collection: 'phosphor', tags: ['money', 'price', 'cost'] },
+  { name: 'ph:trend-up', category: 'arrows', collection: 'phosphor', tags: ['growth', 'increase', 'chart'] },
+  { name: 'ph:trend-down', category: 'arrows', collection: 'phosphor', tags: ['decline', 'decrease', 'chart'] },
+  { name: 'ph:chart-bar', category: 'general', collection: 'phosphor', tags: ['chart', 'graph', 'data'] },
+  { name: 'ph:chart-pie-slice', category: 'general', collection: 'phosphor', tags: ['chart', 'graph', 'statistics'] },
+  { name: 'ph:activity', category: 'general', collection: 'phosphor', tags: ['pulse', 'heartbeat', 'monitor'] },
+  { name: 'ph:cpu', category: 'devices', collection: 'phosphor', tags: ['processor', 'chip', 'computer'] },
+  { name: 'ph:hard-drive', category: 'devices', collection: 'phosphor', tags: ['storage', 'disk', 'data'] },
+  { name: 'ph:desktop', category: 'devices', collection: 'phosphor', tags: ['monitor', 'screen', 'computer'] },
+  { name: 'ph:device-mobile', category: 'devices', collection: 'phosphor', tags: ['smartphone', 'mobile', 'phone'] },
+  { name: 'ph:device-tablet', category: 'devices', collection: 'phosphor', tags: ['tablet', 'ipad', 'device'] },
+  { name: 'ph:laptop', category: 'devices', collection: 'phosphor', tags: ['computer', 'notebook', 'pc'] },
+  { name: 'ph:headphones', category: 'media', collection: 'phosphor', tags: ['audio', 'sound', 'music'] },
+  { name: 'ph:microphone', category: 'media', collection: 'phosphor', tags: ['mic', 'record', 'voice'] },
+  { name: 'ph:speaker-high', category: 'media', collection: 'phosphor', tags: ['volume', 'sound', 'audio'] },
+  { name: 'ph:speaker-slash', category: 'media', collection: 'phosphor', tags: ['mute', 'silent', 'no-sound'] },
+  { name: 'ph:play', category: 'media', collection: 'phosphor', tags: ['start', 'begin', 'video'] },
+  { name: 'ph:pause', category: 'media', collection: 'phosphor', tags: ['stop', 'break', 'video'] },
+  { name: 'ph:skip-forward', category: 'media', collection: 'phosphor', tags: ['next', 'forward', 'video'] },
+  { name: 'ph:skip-back', category: 'media', collection: 'phosphor', tags: ['previous', 'back', 'video'] },
+  { name: 'ph:repeat', category: 'media', collection: 'phosphor', tags: ['loop', 'cycle', 'again'] },
+  { name: 'ph:shuffle', category: 'media', collection: 'phosphor', tags: ['random', 'mix', 'playlist'] }
 ]
 
 function App() {
@@ -477,34 +666,40 @@ function App() {
   }
 
   return (
-    <div style={{ 
-      minHeight: '100vh', 
-      background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+    <div style={{
+      minHeight: '100vh',
+      background: 'linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%)',
       fontFamily: 'system-ui, -apple-system, sans-serif'
     }}>
       {/* 头部 */}
       <header style={{
-        background: 'rgba(255, 255, 255, 0.95)',
-        padding: '1rem 0',
-        boxShadow: '0 2px 10px rgba(0,0,0,0.1)'
+        background: 'rgba(255, 255, 255, 0.9)',
+        padding: '1.5rem 0',
+        boxShadow: '0 2px 20px rgba(0,0,0,0.08)',
+        backdropFilter: 'blur(10px)'
       }}>
         <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 1rem' }}>
-          <h1 style={{ 
-            margin: 0, 
-            fontSize: '2rem', 
-            fontWeight: 'bold', 
-            color: '#333',
-            textAlign: 'center'
+          <h1 style={{
+            margin: 0,
+            fontSize: '2.5rem',
+            fontWeight: '700',
+            color: '#1a202c',
+            textAlign: 'center',
+            background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+            WebkitBackgroundClip: 'text',
+            WebkitTextFillColor: 'transparent',
+            backgroundClip: 'text'
           }}>
             🔍 图标搜索工具
           </h1>
-          <p style={{ 
-            margin: '0.5rem 0 0 0', 
-            fontSize: '1rem', 
-            color: '#666',
-            textAlign: 'center'
+          <p style={{
+            margin: '0.5rem 0 0 0',
+            fontSize: '1.1rem',
+            color: '#4a5568',
+            textAlign: 'center',
+            fontWeight: '500'
           }}>
-            快速搜索和收藏您喜欢的图标
+            搜索并下载来自 6 大图标库的 380+ 精选图标
           </p>
         </div>
       </header>
@@ -512,11 +707,13 @@ function App() {
       <div style={{ maxWidth: '1400px', margin: '0 auto', padding: '2rem 1rem' }}>
         {/* 搜索和过滤区域 */}
         <div style={{
-          background: 'rgba(255, 255, 255, 0.95)',
-          borderRadius: '12px',
-          padding: '1.5rem',
+          background: 'rgba(255, 255, 255, 0.9)',
+          borderRadius: '16px',
+          padding: '2rem',
           marginBottom: '2rem',
-          boxShadow: '0 4px 20px rgba(0,0,0,0.1)'
+          boxShadow: '0 8px 32px rgba(0,0,0,0.08)',
+          backdropFilter: 'blur(10px)',
+          border: '1px solid rgba(255, 255, 255, 0.2)'
         }}>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
             {/* 搜索框 */}
@@ -528,15 +725,22 @@ function App() {
                 placeholder="搜索图标... (支持英文名称和标签)"
                 style={{
                   width: '100%',
-                  padding: '12px 16px 12px 48px',
-                  border: '2px solid #e0e0e0',
-                  borderRadius: '8px',
+                  padding: '14px 16px 14px 48px',
+                  border: '2px solid #e2e8f0',
+                  borderRadius: '12px',
                   fontSize: '1rem',
                   outline: 'none',
-                  transition: 'border-color 0.3s ease'
+                  transition: 'all 0.2s ease',
+                  background: 'rgba(255, 255, 255, 0.8)'
                 }}
-                onFocus={(e) => e.target.style.borderColor = '#667eea'}
-                onBlur={(e) => e.target.style.borderColor = '#e0e0e0'}
+                onFocus={(e) => {
+                  e.target.style.borderColor = '#667eea'
+                  e.target.style.boxShadow = '0 0 0 3px rgba(102, 126, 234, 0.1)'
+                }}
+                onBlur={(e) => {
+                  e.target.style.borderColor = '#e2e8f0'
+                  e.target.style.boxShadow = 'none'
+                }}
               />
               <div style={{
                 position: 'absolute',

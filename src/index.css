@@ -11,7 +11,8 @@
 body {
   margin: 0;
   min-height: 100vh;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+  color: #1a202c;
 }
 
 /* 自定义滚动条 */
@@ -35,10 +36,46 @@ body {
 
 /* 图标悬停效果 */
 .icon-card {
-  transition: all 0.3s ease;
+  transition: all 0.2s ease;
+  border: 1px solid transparent;
 }
 
 .icon-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  border-color: #3b82f6;
+}
+
+/* 搜索框样式 */
+.search-input {
+  transition: all 0.2s ease;
+}
+
+.search-input:focus {
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+  border-color: #3b82f6;
+}
+
+/* 按钮悬停效果 */
+.filter-button {
+  transition: all 0.2s ease;
+}
+
+.filter-button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* 图标加载动画 */
+.icon-loading {
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
 }
