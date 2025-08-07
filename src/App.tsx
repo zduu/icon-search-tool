@@ -668,38 +668,96 @@ function App() {
   return (
     <div style={{
       minHeight: '100vh',
-      background: 'linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%)',
-      fontFamily: 'system-ui, -apple-system, sans-serif'
+      fontFamily: 'system-ui, -apple-system, sans-serif',
+      position: 'relative'
     }}>
       {/* 头部 */}
       <header style={{
-        background: 'rgba(255, 255, 255, 0.9)',
+        background: 'linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(248, 250, 252, 0.9) 100%)',
         padding: '1.5rem 0',
-        boxShadow: '0 2px 20px rgba(0,0,0,0.08)',
-        backdropFilter: 'blur(10px)'
+        boxShadow: '0 4px 32px rgba(139, 92, 246, 0.1), 0 2px 16px rgba(59, 130, 246, 0.05)',
+        backdropFilter: 'blur(20px)',
+        borderBottom: '1px solid rgba(139, 92, 246, 0.1)'
       }}>
-        <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 1rem' }}>
+        <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 1rem', position: 'relative' }}>
+          {/* 标题装饰背景 */}
+          <div style={{
+            position: 'absolute',
+            top: '50%',
+            left: '50%',
+            transform: 'translate(-50%, -50%)',
+            width: '600px',
+            height: '100px',
+            background: 'linear-gradient(45deg, rgba(255, 107, 107, 0.1), rgba(78, 205, 196, 0.1), rgba(69, 183, 209, 0.1), rgba(150, 206, 180, 0.1), rgba(254, 202, 87, 0.1))',
+            borderRadius: '50px',
+            filter: 'blur(20px)',
+            animation: 'gradientShift 6s ease-in-out infinite',
+            zIndex: -1
+          }} />
+
+          {/* 浮动装饰图标 */}
+          <div style={{
+            position: 'absolute',
+            top: '20px',
+            left: '10%',
+            fontSize: '1.5rem',
+            animation: 'float 3s ease-in-out infinite',
+            opacity: 0.7
+          }}>🎨</div>
+          <div style={{
+            position: 'absolute',
+            top: '10px',
+            right: '15%',
+            fontSize: '1.2rem',
+            animation: 'float 4s ease-in-out infinite 0.5s',
+            opacity: 0.6
+          }}>✨</div>
+          <div style={{
+            position: 'absolute',
+            bottom: '10px',
+            left: '20%',
+            fontSize: '1rem',
+            animation: 'float 3.5s ease-in-out infinite 1s',
+            opacity: 0.5
+          }}>🚀</div>
+          <div style={{
+            position: 'absolute',
+            bottom: '20px',
+            right: '10%',
+            fontSize: '1.3rem',
+            animation: 'float 2.8s ease-in-out infinite 1.5s',
+            opacity: 0.6
+          }}>💎</div>
+
           <h1 style={{
             margin: 0,
             fontSize: '2.5rem',
             fontWeight: '700',
-            color: '#1a202c',
             textAlign: 'center',
-            background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+            background: 'linear-gradient(135deg, #ff6b6b 0%, #4ecdc4 25%, #45b7d1 50%, #96ceb4 75%, #feca57 100%)',
             WebkitBackgroundClip: 'text',
             WebkitTextFillColor: 'transparent',
-            backgroundClip: 'text'
+            backgroundClip: 'text',
+            backgroundSize: '200% 200%',
+            animation: 'gradientShift 4s ease-in-out infinite, titleGlow 3s ease-in-out infinite',
+            position: 'relative',
+            zIndex: 1
           }}>
-            🔍 图标搜索工具
+            🔍✨ 图标搜索工具 ✨🎨
           </h1>
           <p style={{
             margin: '0.5rem 0 0 0',
             fontSize: '1.1rem',
-            color: '#4a5568',
             textAlign: 'center',
-            fontWeight: '500'
+            fontWeight: '500',
+            background: 'linear-gradient(90deg, #667eea 0%, #764ba2 50%, #f093fb 100%)',
+            WebkitBackgroundClip: 'text',
+            WebkitTextFillColor: 'transparent',
+            backgroundClip: 'text',
+            backgroundSize: '200% 100%',
+            animation: 'gradientShift 3s ease-in-out infinite reverse'
           }}>
-            搜索并下载来自 6 大图标库的 380+ 精选图标
+            🎨 搜索并下载来自 6 大图标库的 380+ 精选图标 🚀
           </p>
         </div>
       </header>
@@ -707,13 +765,15 @@ function App() {
       <div style={{ maxWidth: '1400px', margin: '0 auto', padding: '2rem 1rem' }}>
         {/* 搜索和过滤区域 */}
         <div style={{
-          background: 'rgba(255, 255, 255, 0.9)',
-          borderRadius: '16px',
+          background: 'linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(248, 250, 252, 0.9) 100%)',
+          borderRadius: '20px',
           padding: '2rem',
           marginBottom: '2rem',
-          boxShadow: '0 8px 32px rgba(0,0,0,0.08)',
-          backdropFilter: 'blur(10px)',
-          border: '1px solid rgba(255, 255, 255, 0.2)'
+          boxShadow: '0 20px 40px rgba(139, 92, 246, 0.1), 0 8px 16px rgba(59, 130, 246, 0.05)',
+          backdropFilter: 'blur(20px)',
+          border: '1px solid rgba(139, 92, 246, 0.1)',
+          position: 'relative',
+          overflow: 'hidden'
         }}>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
             {/* 搜索框 */}
@@ -726,20 +786,23 @@ function App() {
                 style={{
                   width: '100%',
                   padding: '14px 16px 14px 48px',
-                  border: '2px solid #e2e8f0',
+                  border: '2px solid rgba(139, 92, 246, 0.2)',
                   borderRadius: '12px',
                   fontSize: '1rem',
                   outline: 'none',
-                  transition: 'all 0.2s ease',
-                  background: 'rgba(255, 255, 255, 0.8)'
+                  transition: 'all 0.3s ease',
+                  background: 'linear-gradient(135deg, rgba(255, 255, 255, 0.9) 0%, rgba(248, 250, 252, 0.8) 100%)',
+                  backdropFilter: 'blur(10px)'
                 }}
                 onFocus={(e) => {
-                  e.target.style.borderColor = '#667eea'
-                  e.target.style.boxShadow = '0 0 0 3px rgba(102, 126, 234, 0.1)'
+                  e.target.style.borderColor = '#8b5cf6'
+                  e.target.style.boxShadow = '0 0 0 4px rgba(139, 92, 246, 0.15), 0 8px 16px rgba(139, 92, 246, 0.1)'
+                  e.target.style.background = 'linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(248, 250, 252, 0.9) 100%)'
                 }}
                 onBlur={(e) => {
-                  e.target.style.borderColor = '#e2e8f0'
+                  e.target.style.borderColor = 'rgba(139, 92, 246, 0.2)'
                   e.target.style.boxShadow = 'none'
+                  e.target.style.background = 'linear-gradient(135deg, rgba(255, 255, 255, 0.9) 0%, rgba(248, 250, 252, 0.8) 100%)'
                 }}
               />
               <div style={{
@@ -777,13 +840,20 @@ function App() {
                     onClick={() => setSelectedCollection(collection)}
                     style={{
                       padding: '6px 12px',
-                      border: 'none',
                       borderRadius: '16px',
                       fontSize: '0.75rem',
                       cursor: 'pointer',
                       transition: 'all 0.3s ease',
-                      background: selectedCollection === collection ? '#4f46e5' : '#e5e7eb',
-                      color: selectedCollection === collection ? 'white' : '#374151'
+                      background: selectedCollection === collection
+                        ? 'linear-gradient(135deg, #8b5cf6 0%, #3b82f6 100%)'
+                        : 'linear-gradient(135deg, rgba(255, 255, 255, 0.8) 0%, rgba(241, 245, 249, 0.8) 100%)',
+                      color: selectedCollection === collection ? 'white' : '#374151',
+                      border: selectedCollection === collection
+                        ? '1px solid rgba(139, 92, 246, 0.3)'
+                        : '1px solid rgba(139, 92, 246, 0.1)',
+                      boxShadow: selectedCollection === collection
+                        ? '0 4px 12px rgba(139, 92, 246, 0.3)'
+                        : '0 2px 4px rgba(0, 0, 0, 0.05)'
                     }}
                   >
                     {collection === 'all' ? '全部' : iconCollections.find(c => c.id === collection)?.name || collection}
@@ -804,13 +874,20 @@ function App() {
                     onClick={() => setSelectedCategory(category)}
                     style={{
                       padding: '8px 16px',
-                      border: 'none',
                       borderRadius: '20px',
                       fontSize: '0.875rem',
                       cursor: 'pointer',
                       transition: 'all 0.3s ease',
-                      background: selectedCategory === category ? '#667eea' : '#f0f0f0',
-                      color: selectedCategory === category ? 'white' : '#333'
+                      background: selectedCategory === category
+                        ? 'linear-gradient(135deg, #06b6d4 0%, #3b82f6 100%)'
+                        : 'linear-gradient(135deg, rgba(255, 255, 255, 0.9) 0%, rgba(248, 250, 252, 0.8) 100%)',
+                      color: selectedCategory === category ? 'white' : '#374151',
+                      border: selectedCategory === category
+                        ? '1px solid rgba(6, 182, 212, 0.3)'
+                        : '1px solid rgba(6, 182, 212, 0.1)',
+                      boxShadow: selectedCategory === category
+                        ? '0 4px 12px rgba(6, 182, 212, 0.3)'
+                        : '0 2px 4px rgba(0, 0, 0, 0.05)'
                     }}
                   >
                     {categoryNames[category] || category}
@@ -879,24 +956,27 @@ function App() {
           }}>
             {filteredIcons.map((icon) => (
               <div key={icon.id} style={{
-                background: 'rgba(255, 255, 255, 0.95)',
-                borderRadius: '12px',
+                background: 'linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(248, 250, 252, 0.9) 100%)',
+                borderRadius: '16px',
                 padding: '1.5rem',
                 textAlign: 'center',
-                boxShadow: '0 4px 20px rgba(0,0,0,0.1)',
+                boxShadow: '0 8px 32px rgba(139, 92, 246, 0.08), 0 4px 16px rgba(59, 130, 246, 0.05)',
                 transition: 'all 0.3s ease',
                 position: 'relative',
-                border: '1px solid transparent'
+                border: '1px solid rgba(139, 92, 246, 0.1)',
+                backdropFilter: 'blur(10px)'
               }}
               onMouseEnter={(e) => {
-                e.currentTarget.style.transform = 'translateY(-4px)'
-                e.currentTarget.style.boxShadow = '0 8px 30px rgba(0,0,0,0.15)'
-                e.currentTarget.style.borderColor = '#667eea'
+                e.currentTarget.style.transform = 'translateY(-6px) scale(1.02)'
+                e.currentTarget.style.boxShadow = '0 20px 40px rgba(139, 92, 246, 0.15), 0 8px 16px rgba(59, 130, 246, 0.1)'
+                e.currentTarget.style.borderColor = 'rgba(139, 92, 246, 0.3)'
+                e.currentTarget.style.background = 'linear-gradient(135deg, rgba(255, 255, 255, 0.98) 0%, rgba(248, 250, 252, 0.95) 100%)'
               }}
               onMouseLeave={(e) => {
-                e.currentTarget.style.transform = 'translateY(0)'
-                e.currentTarget.style.boxShadow = '0 4px 20px rgba(0,0,0,0.1)'
-                e.currentTarget.style.borderColor = 'transparent'
+                e.currentTarget.style.transform = 'translateY(0) scale(1)'
+                e.currentTarget.style.boxShadow = '0 8px 32px rgba(139, 92, 246, 0.08), 0 4px 16px rgba(59, 130, 246, 0.05)'
+                e.currentTarget.style.borderColor = 'rgba(139, 92, 246, 0.1)'
+                e.currentTarget.style.background = 'linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(248, 250, 252, 0.9) 100%)'
               }}>
                 {/* 收藏按钮 */}
                 <button
@@ -924,8 +1004,9 @@ function App() {
                   alignItems: 'center',
                   justifyContent: 'center',
                   marginBottom: '1rem',
-                  background: '#f8fafc',
-                  borderRadius: '8px'
+                  background: 'linear-gradient(135deg, rgba(139, 92, 246, 0.05) 0%, rgba(59, 130, 246, 0.05) 50%, rgba(6, 182, 212, 0.05) 100%)',
+                  borderRadius: '12px',
+                  border: '1px solid rgba(139, 92, 246, 0.1)'
                 }}>
                   <img
                     src={icon.url}
@@ -1019,19 +1100,24 @@ function App() {
                     onClick={() => downloadIcon(icon)}
                     style={{
                       padding: '6px 12px',
-                      border: 'none',
                       borderRadius: '6px',
                       fontSize: '0.75rem',
                       cursor: 'pointer',
-                      background: '#667eea',
+                      background: 'linear-gradient(135deg, #8b5cf6 0%, #3b82f6 100%)',
                       color: 'white',
-                      transition: 'all 0.2s ease'
+                      transition: 'all 0.3s ease',
+                      border: '1px solid rgba(139, 92, 246, 0.3)',
+                      boxShadow: '0 4px 12px rgba(139, 92, 246, 0.3)'
                     }}
                     onMouseEnter={(e) => {
-                      e.currentTarget.style.background = '#5a67d8'
+                      e.currentTarget.style.background = 'linear-gradient(135deg, #7c3aed 0%, #2563eb 100%)'
+                      e.currentTarget.style.transform = 'translateY(-1px)'
+                      e.currentTarget.style.boxShadow = '0 6px 16px rgba(139, 92, 246, 0.4)'
                     }}
                     onMouseLeave={(e) => {
-                      e.currentTarget.style.background = '#667eea'
+                      e.currentTarget.style.background = 'linear-gradient(135deg, #8b5cf6 0%, #3b82f6 100%)'
+                      e.currentTarget.style.transform = 'translateY(0)'
+                      e.currentTarget.style.boxShadow = '0 4px 12px rgba(139, 92, 246, 0.3)'
                     }}
                     title="下载SVG文件"
                   >
