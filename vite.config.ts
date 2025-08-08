@@ -7,5 +7,13 @@ export default defineConfig({
   server: {
     port: 3000,
     host: true
+  },
+  publicDir: 'public',
+  build: {
+    rollupOptions: {
+      output: {
+        manualChunks: undefined
+      }
+    }
   }
 })
